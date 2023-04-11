@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/huddlelandingpagewithsingleintroductorysection-lsgpAYMBgL)
+- Live Site URL: [Add live site URL here](https://iceberg61.github.io/Huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
