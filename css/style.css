@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 62.5%;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem;
+    overflow: hidden;
+    background-color: var(--Violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  center ;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+}
+
+.logo {
+    height: 5rem;
+    margin: 2rem 0 ;
+}
+
+.info-div {
+    width: 90%;
+    color: var(--white);
+    margin: 15rem 0;
+}
+
+.img-container {margin-left:  3rem;}
+
+.heading {
+    line-height: 1.3;
+    font-size: 4rem;
+}
+
+.info-div p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem 2rem 3rem 0;
+
+}
+
+button {
+    border-radius: 2rem;
+    box-shadow: 2px 2px 6px 1px rgba(46, 45, 45, 0.884);
+    border: none;
+    padding: 1.3rem 6rem;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+    
+button:hover {
+    color: var(--white);
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+    background-color: var(--Soft-Magenta);}
+
+.social-media-icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.social-media-icon a {
+    margin-inline: .7rem;
+    padding: 2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.social-media-icon a img {height: 15px; }
+
+.social-media-icon a:hover  {border-color: var(--Soft-Magenta); }
+
+.social-media-icon a img:hover {color: var(--Soft-Magenta);}
+
+@media (max-width: 768px) {
+html {font-size: 50%;}
+
+
+    body {
+        margin: 0;
+        overflow: scroll;
+        background-repeat: no-repeat;
+        background-position:  top; 
+        background-size: cover;
+        background-image: url(../images/bg-mobile.svg);
+    }
+    main {grid-template-columns: 1fr;}
+
+    .img-container {margin-left:  0;}
+
+    .logo {margin-left: 3rem;}
+    
+    .mockups{transform: scale(0.9);    max-width: 100%;}
+
+    .info-div {
+        text-align: center;
+        margin: 7rem 3rem;
+        line-height: 1.5;
+        /* width: 42re; */
+        max-width: 100%;
+    }
+
+    .social-media-icon {justify-content: center;}
+
+    .info-div p {
+        font-size: 2.5rem;
+        margin: 3rem 2rem 5rem 2rem; 
+    }
+
+    button {transform: scale(1.6);}
+}
